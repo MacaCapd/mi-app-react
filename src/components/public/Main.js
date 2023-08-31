@@ -3,6 +3,7 @@
 import React, { Component } from 'react'
 import Cards from './Cards';
 import RickAndMortyService from '../../services/RickAndMorty.service';
+import { Link } from 'react-router-dom';
 
 export class Main extends Component {
 
@@ -26,7 +27,7 @@ export class Main extends Component {
               <h1 className="fw-light">Album Rick And Morty</h1>
               <p className="lead text-body-secondary">Rick y Morty (en inglés: Rick and Morty) es una serie de televisión estadounidense de animación para adultos creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim, también se emitió en Cartoon Network.</p>
               <p>
-                <div><a href="/" className="btn btn-success">Home</a> <a href="/user-form" className="btn btn-secondary my-2">Formulario</a></div>
+                <div><Link to='/user-form' className="btn btn-success">FORMULARIO</Link> <Link to='/contact' className="btn btn-secondary my-2">CONTACTO</Link></div>
               </p>             
             </div>
           </div>
